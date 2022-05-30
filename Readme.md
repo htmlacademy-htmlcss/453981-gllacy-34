@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Виктория Яковлева](https://up.htmlacademy.ru/htmlcss/34/user/453981).
-* Наставник: [Никита Сигов](https://htmlacademy.ru/profile/crazer).
+* Наставник: [Дмитрий Железцов](https://htmlacademy.ru/profile/sench).
 
 ---
 
