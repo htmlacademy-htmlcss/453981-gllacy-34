@@ -1,0 +1,267 @@
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/inter-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/inter-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  src: url("/fonts/inter-900.woff2") format("woff2");
+  font-display: swap;
+}
+
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  background-color: #feafc3;
+  color: #2D3440;
+}
+
+a {
+  text-decoration: none;
+  color: #2D3440;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.button {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  border: none;
+  border-radius: 26px;
+  padding: 12px 32px;
+}
+
+.button-dark {
+  background-color: #FF2F64;
+  border: 4px solid #FF2F644D;
+  color: #FCFCFC;
+  background-clip: padding-box;
+}
+
+.button-light {
+  background-color: #FCFCFC;
+  border: 2px solid #FCFCFC4D;
+  color: #2D3440;
+  background-clip: padding-box;
+}
+
+.navigation-button {
+  background-color: #FCFCFC4D;
+  color: #2D3440;
+}
+
+.slider-button {
+  background-color: #FCFCFC4D;
+  border: 2px solid #FCFCFC;
+  background-clip: padding-box;
+}
+
+.filter-button {
+  background-color: #FCFCFC4D;
+  border: 2px solid #FCFCFC;
+  color: #2D3440;
+  background-clip: padding-box;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.offers-card-button {
+  background-color: #FF2F64;
+}
+
+.pagination-button {
+  background-color: transparent;
+  padding: 2px 8px;
+}
+
+.pagination-button-current {
+  background-color: #FCFCFC;
+  border-radius: 50%;
+}
+
+section.advantages {
+  background-image: url("../images/background-ceo.jpg");
+  height: 480px;
+  width: 1170px;
+  border-radius: 16px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+article.news-post {
+  background-image: url("../images/background-news.jpg");
+  height: 224px;
+  width: 570px;
+  border-radius: 16px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+article.news-subscribe {
+  background-image: url("../images/background-subscribe.jpg");
+  height: 224px;
+  width: 570px;
+  border-radius: 16px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+section.delivery {
+  background-image: url("../images/background-delivery.jpg");
+  height: 534px;
+  width: 1170px;
+  border-radius: 16px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+section.contacts {
+  background-image: url("../images/background-contacts.jpg");
+  height: 492px;
+  width: 1170px;
+  border-radius: 16px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.opacity {
+  opacity: 0.4;
+}
+
+.page-header {
+  background-color: #feafc3;
+  color: #000000;
+  line-height: 20px;
+}
+
+.navigation-link {
+  background-color: #feafc3;
+  font-weight: 400;
+  text-align: center;
+  color: #2D3440;
+  text-decoration: none;
+  text-transform: none;
+  font-size: 16px;
+}
+
+
+.navigation-item {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+}
+
+.navigation-active {
+  background-color: #FF2F64;
+  color: #FCFCFC;
+  border-radius: 26px;
+  padding: 12px 32px;
+}
+
+h1 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 46px;
+  color: #2D3440;
+}
+
+h2 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  color: #2D3440;
+}
+
+.inner-header-title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  color: #2D3440;
+}
+
+h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #2D3440;
+}
+
+.text-bigger {
+  font-size: 20px;
+}
+
+.text-smaller {
+  font-size: 14px;
+}
+
+.text-color-secondary {
+  color: #565C66;
+}
+
+.offers-card-title, .offers-card-price {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.news-post-title {
+  line-height: 20px;
+}
+
+.delivery-form .form-label {
+  line-height: 20px;
+}
+
+.contacts-address, .contacts-phone {
+  line-height: 24px;
+}
+
+.contacts-hours {
+  line-height: 20px;
+}
+
+.breadcrumbs {
+  line-height: 20px;
+}
+
+.products p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #2D3440;
+}
+
+.catalog-filters {
+  line-height: 20px;
+}
+
