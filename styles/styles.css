@@ -2,28 +2,25 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url("/fonts/inter-400.woff2") format("woff2");
+  src: url("../fonts/inter-400.woff2") format("woff2");
   font-display: swap;
 }
-
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  src: url("/fonts/inter-700.woff2") format("woff2");
+  src: url("../fonts/inter-700.woff2") format("woff2");
   font-display: swap;
 }
-
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 900;
-  src: url("/fonts/inter-900.woff2") format("woff2");
+  src: url("../fonts/inter-900.woff2") format("woff2");
   font-display: swap;
 }
-
 
 body {
   font-family: "Inter", sans-serif;
@@ -103,46 +100,36 @@ a {
   border-radius: 50%;
 }
 
-section.advantages {
+.advantages {
   background-image: url("../images/background-ceo.jpg");
-  height: 480px;
-  width: 1170px;
   border-radius: 16px;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-article.news-post {
+.news-post {
   background-image: url("../images/background-news.jpg");
-  height: 224px;
-  width: 570px;
   border-radius: 16px;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-article.news-subscribe {
+.news-subscribe {
   background-image: url("../images/background-subscribe.jpg");
-  height: 224px;
-  width: 570px;
   border-radius: 16px;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-section.delivery {
+.delivery {
   background-image: url("../images/background-delivery.jpg");
-  height: 534px;
-  width: 1170px;
   border-radius: 16px;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-section.contacts {
+.contacts {
   background-image: url("../images/background-contacts.jpg");
-  height: 492px;
-  width: 1170px;
   border-radius: 16px;
   background-size: contain;
   background-repeat: no-repeat;
@@ -168,7 +155,6 @@ section.contacts {
   font-size: 16px;
 }
 
-
 .navigation-item {
   font-style: normal;
   font-weight: 400;
@@ -184,7 +170,7 @@ section.contacts {
   padding: 12px 32px;
 }
 
-h1 {
+.products-title {
   font-style: normal;
   font-weight: 900;
   font-size: 36px;
@@ -192,14 +178,10 @@ h1 {
   color: #2D3440;
 }
 
-h2 {
-  font-style: normal;
-  font-weight: 900;
-  font-size: 32px;
-  line-height: 46px;
-  color: #2D3440;
-}
-
+.banners-title,
+.offers-title,
+.advantages-title,
+.delivery-title,
 .inner-header-title {
   font-style: normal;
   font-weight: 900;
@@ -208,7 +190,8 @@ h2 {
   color: #2D3440;
 }
 
-h3 {
+.banners-item-title,
+.news-post-subtitle {
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -228,7 +211,8 @@ h3 {
   color: #565C66;
 }
 
-.offers-card-title, .offers-card-price {
+.offers-card-title,
+.offers-card-price {
   font-size: 20px;
   line-height: 24px;
 }
@@ -241,7 +225,8 @@ h3 {
   line-height: 20px;
 }
 
-.contacts-address, .contacts-phone {
+.contacts-address,
+.contacts-phone {
   line-height: 24px;
 }
 
@@ -253,7 +238,7 @@ h3 {
   line-height: 20px;
 }
 
-.products p {
+.products-description {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
