@@ -47,7 +47,7 @@ body {
 }
 
 .reset-list {
-  list-style: none;
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
@@ -89,6 +89,9 @@ body {
   background-color: var(--secondary-background-color);
   padding: 36px 206px 36px 36px;
   border-radius: 16px;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 219px 268px;
 }
 
 .banners-item-description {
@@ -97,16 +100,10 @@ body {
 
 .banners-item:nth-child(1) {
   background-image: url('../images/free-raspberry.png');
-  background-size: 219px 268px;
-  background-repeat: no-repeat;
-  background-position: right bottom;
 }
 
 .banners-item:nth-child(2) {
   background-image: url('../images/free-marshmellow.png');
-  background-size: 219px 268px;
-  background-repeat: no-repeat;
-  background-position: right bottom;
 }
 
 .banners-item-title {
@@ -148,7 +145,7 @@ body {
 
 .button-light {
   background-color: var(--button-light-background-color);
-  border: 2px solid #FCFCFC4D;
+  border: 4px solid #FCFCFC4D;
   color: #2D3440;
   background-clip: padding-box;
 }
@@ -346,28 +343,26 @@ body {
   margin-top: 80px;
 }
 
-.offers-card {
-  flex-basis: 25%;
-}
-
 .offers-card-button {
   background-color: var(--button-dark-background-color);
 }
 
+.offers-card-item {
+  background-color: var(--paper-background-color);
+  flex-basis: 25%;
+  border-radius: 8px;
+}
+.offers-card-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  margin: 55px 0 0;
+}
 .offers-card-title,
 .offers-card-price {
   font-size: 20px;
   line-height: 24px;
 }
-
-.offers-cards {
-  background-color: var(--paper-background-color);
-  border-radius: 8px;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 55px 0 0;
-}
-
 .offers-pagination {
   display: flex;
   align-items: center;
