@@ -352,17 +352,20 @@ body {
   flex-basis: 25%;
   border-radius: 8px;
 }
+
 .offers-card-list {
   display: flex;
   flex-wrap: wrap;
   column-gap: 30px;
   margin: 55px 0 0;
 }
+
 .offers-card-title,
 .offers-card-price {
   font-size: 20px;
   line-height: 24px;
 }
+
 .offers-pagination {
   display: flex;
   align-items: center;
