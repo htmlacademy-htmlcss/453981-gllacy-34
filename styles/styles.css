@@ -22,6 +22,10 @@
   font-display: swap;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 :root {
   --primary-background-color: #feafc3;
   --secondary-background-color: #FF7799;
@@ -52,6 +56,36 @@ body {
   padding: 0;
 }
 
+.heading-h1 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 46px;
+  color: #2D3440;
+  margin: 0;
+}
+
+.heading-h2 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  color: #2D3440;
+  margin: 0 0 56px;
+}
+
+.heading-h3 {
+  font-style: normal;
+  font-size: 24px;
+  line-height: 30px;
+  color: #2D3440;
+  margin: 0;
+}
+
+.inner-header {
+  margin-bottom: 40px;
+}
+
 .main-index,
 .main-inner {
   flex-grow: 1;
@@ -63,7 +97,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   padding: 24px;
-  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 .advantages-container {
@@ -82,7 +116,7 @@ body {
 }
 
 .banners {
-  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 .banners-item {
@@ -114,12 +148,18 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 30px;
-  margin: 55px 0 0 0;
 }
 
 .breadcrumbs {
+  color: #2D3440;
   line-height: 20px;
-  margin-top: 32px;
+  margin-bottom: 16px;
+  display: flex;
+}
+
+.breadcrumbs-link {
+  margin-right: 8px;
+  color: inherit;
 }
 
 .button {
@@ -134,6 +174,7 @@ body {
   border-radius: 26px;
   padding: 12px 32px;
   display: inline-flex;
+  min-width: 32px;
 }
 
 .button-dark {
@@ -150,17 +191,18 @@ body {
   background-clip: padding-box;
 }
 
-.catalog-page-title {
-  margin-top: 16px;
-}
-
 .catalog-filters {
   line-height: 20px;
-  margin-top: 40px;
+  margin-bottom: 44px;
+}
+
+.catalog-page-header {
+  margin-bottom: 32px;
 }
 
 .filters-group {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .contacts {
@@ -169,7 +211,6 @@ body {
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: right;
-  margin-top: 80px;
   padding: 64px 763px 64px 64px;
 }
 
@@ -198,9 +239,13 @@ body {
   border-radius: 16px;
   background-size: cover;
   background-repeat: no-repeat;
-  margin-top: 80px;
+  margin-bottom: 80px;
   padding: 64px 64px 64px 100px;
   display: flex;
+}
+
+.delivery-title {
+  margin-bottom: 24px;
 }
 
 .delivery-form-container {
@@ -218,32 +263,6 @@ body {
   background-clip: padding-box;
   font-size: 14px;
   font-weight: 700;
-}
-
-.heading-h1 {
-  font-style: normal;
-  font-weight: 900;
-  font-size: 36px;
-  line-height: 46px;
-  color: #2D3440;
-  margin: 0;
-}
-
-.heading-h2 {
-  font-style: normal;
-  font-weight: 900;
-  font-size: 32px;
-  line-height: 46px;
-  color: #2D3440;
-  margin: 0;
-}
-
-.heading-h3 {
-  font-style: normal;
-  font-size: 24px;
-  line-height: 30px;
-  color: #2D3440;
-  margin: 0;
 }
 
 .navigation {
@@ -266,10 +285,14 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: #2D3440;
-  padding: 6px 16px;
 }
 
 .navigation-link {
+  display: inline-block;
+  padding: 8px 16px;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-weight: 400;
   text-align: center;
   color: #2D3440;
@@ -288,8 +311,17 @@ body {
 
 .navigation-list {
   display: flex;
-  padding: 8px 16px;
   align-items: center;
+}
+
+.navigation-chapters {
+  max-width: 460px;
+  overflow: hidden;
+}
+
+.navigation-chapters .navigation-item {
+  max-width: 180px;
+  display: inline-flex;
 }
 
 .navigation-user .navigation-item {
@@ -300,7 +332,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 30px;
-  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 .news-post {
@@ -313,6 +345,8 @@ body {
 
 .news-post-title {
   line-height: 20px;
+  margin-bottom: 12px;
+  display: block;
 }
 
 .news-subscribe {
@@ -340,24 +374,36 @@ body {
 }
 
 .offers {
-  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.offers-button-container {
+  grid-column: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .offers-card-button {
   background-color: var(--button-dark-background-color);
 }
 
+.offers-card-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .offers-card-item {
   background-color: var(--paper-background-color);
-  flex-basis: 25%;
   border-radius: 8px;
+  padding: 10px 40px;
 }
 
 .offers-card-list {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 30px;
-  margin: 55px 0 0;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 30px;
 }
 
 .offers-card-title,
@@ -366,15 +412,34 @@ body {
   line-height: 24px;
 }
 
-.offers-pagination {
+.offers-card-order {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  margin-top: 16px;
+}
+
+.offers-pagination {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   padding: 40px 0;
 }
 
 .catalog-offers {
-  margin-top: 44px;
+  margin-bottom: 40px;
+}
+
+.catalog-offers .offers-card-list {
+  margin-bottom: 16px;
+}
+
+.catalog-pagination {
+  display: flex;
+}
+
+.catalog-pagination-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .opacity {
@@ -386,6 +451,7 @@ body {
   line-height: 20px;
   padding: 24px 0;
   display: flex;
+  margin-bottom: 21px;
 }
 
 .page-footer {
@@ -394,22 +460,24 @@ body {
   padding: 48px 0;
 }
 
-.catalog-page-footer {
-  margin-top: 40px;
-}
-
 .pagination-button {
   background-color: transparent;
   padding: 2px 8px;
 }
 
-.pagination-button-current {
+.pagination-current {
   background-color: var(--button-light-background-color);
   border-radius: 50%;
 }
 
 .products {
-  margin-top: 136px;
+  margin-bottom: 80px;
+  display: grid;
+  grid-template-columns: 470px 1fr;
+}
+
+.products-container {
+  padding-top: 115px;
 }
 
 .products-description {
@@ -420,10 +488,39 @@ body {
   color: #2D3440;
 }
 
+.slider-pagination-list {
+  display: flex;
+  align-items: center;
+}
+
+.slider-pagination-button {
+  background: transparent;
+  border: none;
+}
+
+.bullets-social-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-pagination-bullets {
+  display: flex;
+}
+
+.social {
+  display: flex;
+}
+
 .slider-button {
   background-color: var(--button-transparent-background-color);
   border: 2px solid #FCFCFC;
   background-clip: padding-box;
+}
+
+.bullets-social-container {
+  grid-column: 1/3;
+  display: flex;
+  justify-content: space-between;
 }
 
 .text-bigger {
@@ -438,7 +535,18 @@ body {
   color: #565C66;
 }
 
+.text-align-center {
+  text-align: center;
+}
+
 .visually-hidden {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
