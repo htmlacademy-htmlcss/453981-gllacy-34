@@ -10,11 +10,10 @@
   <header class="page-header">
     <a class="navigation-logo no-underline" href="#">
       <img class="logo" src="images/logo-gllacy.svg" width="137" height="56"
-           alt="Логотип магазина мороженого «Глейси».">
-    </a>
+           alt="Логотип магазина мороженого «Глейси»."></a>
 
     <nav class="navigation">
-      <ul class="navigation-list reset-list">
+      <ul class="navigation-list navigation-chapters reset-list">
         <li class="navigation-item">
           <a class="navigation-link no-underline" href="catalog.html">Каталог</a>
         </li>
@@ -60,7 +59,7 @@
 
   <main class="main-index">
     <section class="products">
-      <div>
+      <div class="products-container">
         <h1 class="heading-h1">
           <span>Нежный пломбир с клубничным джемом</span>
         </h1>
@@ -71,21 +70,19 @@
           семьи.
         </p>
 
-        <a class="button-light button no-underline" href="">
+        <a class="button-light button no-underline" href="#">
           Заказать
         </a>
       </div>
 
-      <div>
-        <button class="slider-button slider-prev button" type="button">
-          <span class="visually-hidden">Предыдущее фото</span>
-        </button>
+      <div class="pagination-container">
+        <ol class="slider-pagination-list reset-list">
+          <button class="slider-button slider-prev button" type="button">
+            <img src="images/arrow-left.svg" width="16" height="16"
+                 alt="Назад.">
+            <span class="visually-hidden">Предыдущее фото</span>
+          </button>
 
-        <button class="slider-button slider-next button" type="button">
-          <span class="visually-hidden">Следующее фото</span>
-        </button>
-
-        <ol class="slider-pagination">
           <li class="slider-pagination-item">
             <button class="slider-pagination-button slider-pagination-button-current" type="button">
               <img src="images/icecream-red.png" width="306" height="507"
@@ -93,6 +90,12 @@
               <span class="visually-hidden">Мороженко 1</span>
             </button>
           </li>
+
+          <button class="slider-button slider-next button" type="button">
+            <img src="images/arrow-right.svg" width="16" height="16"
+                 alt="Вперед.">
+            <span class="visually-hidden">Следующее фото</span>
+          </button>
 
           <li class="slider-pagination-item">
             <button class="slider-pagination-button" type="button">
@@ -112,8 +115,8 @@
         </ol>
       </div>
 
-      <div>
-        <ol class="slider-pagination-bullets">
+      <div class="bullets-social-container">
+        <ol class="slider-pagination-bullets reset-list">
           <li class="slider-pagination-bullet">
             <button class="bullet bullet-active">
               <span class="visually-hidden">Мороженко 1</span>
@@ -192,17 +195,17 @@
         Попробуйте самые популярные вкусы нашего мороженого
       </h2>
 
-      <ul class="offers-cards reset-list">
+      <ul class="offers-card-list reset-list">
 
-        <li class="offers-card">
-          <a class="no-underline" href="#">
+        <li class="offers-card-item">
+          <a class="no-underline offers-card-description" href="#">
             <img src="images/raspberry.png" width="168" height="168" alt="Мороженое с малиновым джемом.">
             <b class="offers-card-title">Малинка</b>
-            <span class="text-color-secondary">
+            <span class="text-color-secondary text-align-center">
           Сливочное мороженое с малиновым джемом
         </span>
           </a>
-          <div>
+          <div class="offers-card-order">
             <b class="offers-card-price">310 &#8381;/кг</b>
             <a class="offers-card-button button no-underline" href="#">
               <img src="images/cart.svg" width="16" height="16" alt="Добавить в корзину.">
@@ -211,15 +214,15 @@
           </div>
         </li>
 
-        <li class="offers-card">
-          <a class="no-underline" href="#">
+        <li class="offers-card-item">
+          <a class="no-underline offers-card-description" href="#">
             <img src="images/pistachio.png" width="168" height="168" alt="Фисташковое мороженое с шоколадом.">
             <b class="offers-card-title">Фисташка</b>
-            <span class="text-color-secondary">
+            <span class="text-color-secondary text-align-center">
           Фисташковый пломбир с кусочками шоколада
         </span>
           </a>
-          <div>
+          <div class="offers-card-order">
             <b class="offers-card-price">340 &#8381;/кг</b>
             <a class="offers-card-button button no-underline" href="#">
               <img src="images/cart.svg" width="16" height="16" alt="Добавить в корзину.">
@@ -228,15 +231,15 @@
           </div>
         </li>
 
-        <li class="offers-card">
-          <a class="no-underline" href="#">
+        <li class="offers-card-item">
+          <a class="no-underline offers-card-description" href="#">
             <img src="images/blueberry.png" width="168" height="168" alt="Мороженое крем-брюле с черничным джемом.">
             <b class="offers-card-title">Черника</b>
-            <span class="text-color-secondary">
+            <span class="text-color-secondary text-align-center">
           Крем-брюле с черничным джемом
         </span>
           </a>
-          <div>
+          <div class="offers-card-order">
             <b class="offers-card-price">330 &#8381;/кг</b>
             <a class="offers-card-button button no-underline" href="#">
               <img src="images/cart.svg" width="16" height="16" alt="Добавить в корзину.">
@@ -245,15 +248,15 @@
           </div>
         </li>
 
-        <li class="offers-card">
-          <a class="no-underline" href="#">
+        <li class="offers-card-item">
+          <a class="no-underline offers-card-description" href="#">
             <img src="images/bubble-gum.png" width="168" height="168" alt="Ванильное мороженое с посыпкой.">
             <b class="offers-card-title">Бабл-гам</b>
-            <span class="text-color-secondary">
+            <span class="text-color-secondary text-align-center">
           Ванильный пломбир со сладкой посыпкой
         </span>
           </a>
-          <div>
+          <div class="offers-card-order">
             <b class="offers-card-price">320 &#8381;/кг</b>
             <a class="offers-card-button button no-underline" href="#">
               <img src="images/cart.svg" width="16" height="16" alt="Добавить в корзину.">
@@ -332,7 +335,7 @@
 
     <section class="delivery">
       <div>
-        <h2 class="heading-h2">
+        <h2 class="heading-h2 delivery-title">
           Доставка любимого мороженого на дом
         </h2>
         <p class="text-color-secondary">
