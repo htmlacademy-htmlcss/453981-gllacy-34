@@ -202,15 +202,36 @@ body {
 
 .contacts-container {
   background-color: var(--paper-background-color);
+  padding: 40px;
 }
 
-.contacts-address,
-.contacts-phone {
+.contacts-main-office {
+  display: flex;
+  margin-bottom: 12px;
+}
+.contacts-address {
+  display: flex;
   line-height: 24px;
+  margin-bottom: 24px;
+  font-style: normal;
+}
+
+.contacts-for-delivery {
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.contacts-phone {
+  display: flex;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-style: normal;
 }
 
 .contacts-hours {
+  display: flex;
   line-height: 20px;
+  margin-bottom: 36px;
 }
 
 .container {
@@ -236,10 +257,24 @@ body {
 
 .delivery-form-container {
   background-color: var(--paper-background-color);
+  padding: 40px;
 }
 
 .delivery-form .form-label {
   line-height: 20px;
+}
+
+.delivery-help {
+  display: block;
+  margin-bottom: 32px;
+}
+
+.delivery-contacts {
+  margin-bottom: 20px;
+}
+
+.delivery-address {
+  margin-bottom: 36px;
 }
 
 .navigation {
@@ -425,6 +460,18 @@ body {
   font-weight: 700;
 }
 
+.select-control {
+  display: block;
+}
+
+.fatness-filter-list {
+  display: flex;
+}
+
+.fillers-filter-list {
+  display: flex;
+}
+
 .catalog-offers {
   margin-bottom: 40px;
 }
@@ -435,6 +482,10 @@ body {
 
 .catalog-pagination {
   display: flex;
+}
+
+.pagination-link {
+  padding: 2px 8px;
 }
 
 .catalog-pagination-container {
@@ -455,6 +506,14 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 48px 0;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  justify-content: center;
+  gap: 8px 24px;
+
 }
 
 .pagination-button {
@@ -495,17 +554,16 @@ body {
   border: none;
 }
 
-.bullets-social-container {
-  display: flex;
-  justify-content: space-between;
-}
-
 .slider-pagination-bullets {
   display: flex;
 }
 
 .social {
   display: flex;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 16px;
 }
 
 .slider-button {

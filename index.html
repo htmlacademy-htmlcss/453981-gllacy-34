@@ -85,7 +85,7 @@
 
           <li class="slider-pagination-item">
             <button class="slider-pagination-button slider-pagination-button-current" type="button">
-              <img src="images/icecream-red.png" width="306" height="507"
+              <img src="images/icecream-red.png" width="100%" height="507"
                    alt="Мороженое с клубничным джемом.">
               <span class="visually-hidden">Мороженко 1</span>
             </button>
@@ -99,7 +99,7 @@
 
           <li class="slider-pagination-item">
             <button class="slider-pagination-button" type="button">
-              <img src="images/icecream-yellow.png" width="66" height="150"
+              <img src="images/icecream-yellow.png" width="100%" height="150"
                    alt="Мороженое со вкусом банана." class="opacity">
               <span class="visually-hidden">Мороженко 2</span>
             </button>
@@ -107,7 +107,7 @@
 
           <li class="slider-pagination-item">
             <button class="slider-pagination-button" type="button">
-              <img src="images/icecream-whitepink-with-herb.png" width="66" height="150"
+              <img src="images/icecream-whitepink-with-herb.png" width="100%" height="150"
                    alt="Мороженое с карамелью и маршмеллоу." class="opacity">
               <span class="visually-hidden">Мороженко 3</span>
             </button>
@@ -346,11 +346,11 @@
       </div>
 
       <div class="delivery-form-container">
-        <span class="text-color-secondary">
+        <span class="delivery-help text-color-secondary">
           Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.
         </span>
         <form class="delivery-form" action="#" method="post">
-          <div>
+          <div class="delivery-contacts">
             <label class="form-label" for="delivery-date">
               <b>Дата</b>
             </label>
@@ -363,7 +363,7 @@
             <input type="text" id="delivery-phone" name="delivery-phone" placeholder="+7 800 999-00-00">
           </div>
 
-          <div>
+          <div class="delivery-address">
             <label for="delivery-address">
               <b>Адрес</b>
             </label>
@@ -381,21 +381,21 @@
       <h2 class="visually-hidden">Контакты</h2>
 
       <div class="contacts-container">
-        <span class="text-color-secondary">
+        <span class="contacts-main-office text-color-secondary">
           Адрес главного офиса и офлайн-магазина:
         </span>
         <address>
-          <b class="text-bigger contacts-address">
+          <b class="contacts-address text-bigger">
             наб. реки Карповки, 5 лит П, Санкт-Петербург
           </b>
-          <span class="text-color-secondary">
+          <span class="contacts-for-delivery text-color-secondary">
             Для заказов по телефону:
           </span>
           <a class="contacts-phone no-underline" href="tel:+78128121212">
             <b class="text-bigger">+7 (812) 812-12-12</b>
           </a>
         </address>
-        <span class="text-smaller text-color-secondary contacts-hours">
+        <span class="contacts-hours text-smaller text-color-secondary">
           (с 10 до 20 ежедневно)
         </span>
         <button class="button-dark button" type="button">Форма обратной связи</button>
@@ -444,13 +444,13 @@
 
         <li class="footer-links-item">
           <a class="footer-link text-smaller no-underline" href="#">
-            О производстве
+            Наши документы
           </a>
         </li>
 
         <li class="footer-links-item">
           <a class="footer-link text-smaller no-underline" href="#">
-            Наши документы
+            О производстве
           </a>
         </li>
 
