@@ -58,11 +58,12 @@
   </header>
 
   <main class="main-index">
+    <h1 class="visually-hidden">Магазин мороженого Глейси</h1>
     <section class="products">
       <div class="products-container">
-        <h1 class="heading-h1">
+        <h2 class="heading-h1">
           <span>Нежный пломбир с клубничным джемом</span>
-        </h1>
+        </h2>
 
         <p class="products-description">
           Натуральное мороженое из&nbsp;свежих сливок и&nbsp;молока с&nbsp;вкуснейшим клубничным джемом&nbsp;&mdash; это
@@ -77,29 +78,29 @@
 
       <div class="pagination-container">
         <ol class="slider-pagination-list reset-list">
-          <button class="slider-button slider-prev button" type="button">
-            <img src="images/arrow-left.svg" width="16" height="16"
-                 alt="Назад.">
-            <span class="visually-hidden">Предыдущее фото</span>
-          </button>
+          <li class="slider-pagination-item slider-pagination-button-current">
+            <button class="slider-button slider-prev button" type="button">
+              <img src="images/arrow-left.svg" width="16" height="16"
+                   alt="Назад.">
+              <span class="visually-hidden">Предыдущее фото</span>
+            </button>
 
-          <li class="slider-pagination-item">
             <button class="slider-pagination-button slider-pagination-button-current" type="button">
-              <img src="images/icecream-red.png" width="100%" height="507"
+              <img src="images/icecream-red.png" width="306" height="507"
                    alt="Мороженое с клубничным джемом.">
               <span class="visually-hidden">Мороженко 1</span>
             </button>
-          </li>
 
-          <button class="slider-button slider-next button" type="button">
-            <img src="images/arrow-right.svg" width="16" height="16"
-                 alt="Вперед.">
-            <span class="visually-hidden">Следующее фото</span>
-          </button>
+            <button class="slider-button slider-next button" type="button">
+              <img src="images/arrow-right.svg" width="16" height="16"
+                   alt="Вперед.">
+              <span class="visually-hidden">Следующее фото</span>
+            </button>
+          </li>
 
           <li class="slider-pagination-item">
             <button class="slider-pagination-button" type="button">
-              <img src="images/icecream-yellow.png" width="100%" height="150"
+              <img src="images/icecream-yellow.png" width="66" height="150"
                    alt="Мороженое со вкусом банана." class="opacity">
               <span class="visually-hidden">Мороженко 2</span>
             </button>
@@ -107,7 +108,7 @@
 
           <li class="slider-pagination-item">
             <button class="slider-pagination-button" type="button">
-              <img src="images/icecream-whitepink-with-herb.png" width="100%" height="150"
+              <img src="images/icecream-whitepink-with-herb.png" width="66" height="150"
                    alt="Мороженое с карамелью и маршмеллоу." class="opacity">
               <span class="visually-hidden">Мороженко 3</span>
             </button>
@@ -161,7 +162,7 @@
 
     <section class="banners">
       <h2 class="heading-h2">
-        Заказывайте мороженое и получайте подарки!
+        Заказывайте мороженое<br> и получайте подарки!
       </h2>
 
       <ul class="banners-list reset-list">
@@ -192,7 +193,7 @@
 
     <section class="offers">
       <h2 class="heading-h2">
-        Попробуйте самые популярные вкусы нашего мороженого
+        Попробуйте самые популярные<br> вкусы нашего мороженого
       </h2>
 
       <ul class="offers-card-list reset-list">
@@ -334,14 +335,12 @@
     </section>
 
     <section class="delivery">
-      <div>
+      <div class="delivery-description">
         <h2 class="heading-h2 delivery-title">
-          Доставка любимого мороженого на дом
+          Доставка любимого<br> мороженого на дом
         </h2>
         <p class="text-color-secondary">
-          Хочется полакомиться любимым десертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом,
-          и
-          курьер привезёт вам ваш заказ в течение часа!
+          Хочется полакомиться любимым десертом, но&nbsp;нет времени съездить в&nbsp;магазин? Закажите доставку мороженого на&nbsp;дом, и&nbsp;курьер привезёт вам ваш заказ в&nbsp;течение часа!
         </p>
       </div>
 
@@ -384,7 +383,7 @@
         <span class="contacts-main-office text-color-secondary">
           Адрес главного офиса и офлайн-магазина:
         </span>
-        <address>
+        <address class="address-container">
           <b class="contacts-address text-bigger">
             наб. реки Карповки, 5 лит П, Санкт-Петербург
           </b>
