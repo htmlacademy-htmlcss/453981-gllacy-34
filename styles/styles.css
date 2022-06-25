@@ -29,18 +29,19 @@
 }
 
 :root {
-  --primary-color: #feafc3;
-  --secondary-color: #ff7799;
-  --primary-text-color: #2d3440;
-  --secondary-text-color: #565c66;
-  --paper-color: #ffffff;
+  --basic-extra-dark: #2d3440;
+  --basic-dark: #565c66;
+  --basic-neutral: #b9b9b9;
+  --basic-neutral-disabled: #b9b9b94b;
+  --basic-extra-light: #fcfcfc;
+  --basic-white: #ffffff;
+  --special-extra-bright: #ff2f64;
+  --special-extra-bright-border: #ff2f644d;
+  --special-bright: #ff4a78;
+  --special-neutral: #ff7799;
+  --special-light: #feafc3;
+  --special-extra-light: #ffcbd8;
   --black-color: #000000;
-  --dark-background-color: #ff2f64;
-  --dark-border-color: #ff2f644d;
-  --dark-disabled-border-color: #b9b9b9;
-  --dark-disabled-background-color: #b9b9b94b;
-  --light-background-color: #fcfcfc;
-  --slider-underlay: #ffcbd8;
 }
 
 html {
@@ -54,8 +55,8 @@ body {
   height: 100%;
   font-size: 16px;
   line-height: 22px;
-  background-color: var(--primary-color);
-  color: var(--primary-text-color);
+  background-color: var(--special-light);
+  color: var(--basic-extra-dark);
 }
 
 img {
@@ -75,7 +76,7 @@ img {
   font-weight: 900;
   font-size: 36px;
   line-height: 46px;
-  color: var(--primary-text-color);
+  color: var(--basic-extra-dark);
   margin: 0;
 }
 
@@ -84,7 +85,7 @@ img {
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
-  color: var(--primary-text-color);
+  color: var(--basic-extra-dark);
   margin: 0 0 56px;
   text-align: center;
 }
@@ -97,7 +98,7 @@ img {
   font-style: normal;
   font-size: 24px;
   line-height: 30px;
-  color: var(--primary-text-color);
+  color: var(--basic-extra-dark);
   margin: 0;
 }
 
@@ -106,7 +107,7 @@ img {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  color: var(--primary-text-color);
+  color: var(--basic-extra-dark);
   margin: 0 0 8px;
 }
 
@@ -117,7 +118,7 @@ img {
 
 /* header главной страницы */
 .page-header {
-  color: var(--primary-text-color);
+  color: var(--basic-extra-dark);
   line-height: 20px;
   padding: 24px 0;
   display: flex;
@@ -149,7 +150,7 @@ img {
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
-  color: var(--primary-text-color);
+  color: var(--basic-extra-dark);
 }
 
 .navigation-link {
@@ -158,7 +159,7 @@ img {
   text-overflow: ellipsis;
   font-weight: 400;
   text-align: center;
-  color: var(--primary-text-color);
+  color: var(--basic-extra-dark);
   text-decoration: none;
   text-transform: none;
   font-size: 16px;
@@ -169,9 +170,9 @@ img {
 
 .navigation-link.navigation-current,
 .navigation-link.navigation-current:hover {
-  background-color: var(--dark-background-color);
-  border: 2px solid var(--dark-background-color);
-  color: var(--light-background-color);
+  background-color: var(--special-bright);
+  border: 2px solid var(--special-bright);
+  color: var(--basic-extra-light);
   border-radius: 30px;
   padding: 8px 16px;
 }
@@ -183,12 +184,12 @@ img {
 }
 
 .navigation-link:active {
-  background-color: var(--light-background-color);
+  background-color: var(--basic-extra-light);
 }
 
 .navigation-link:focus {
   background-color: rgba(252, 252, 252, 0.5);
-  border: 2px solid var(--primary-text-color);
+  border: 2px solid var(--basic-extra-dark);
 }
 
 .navigation-list {
@@ -267,62 +268,103 @@ img {
 }
 
 .button-dark {
-  background-color: var(--dark-background-color);
-  border: 4px solid var(--dark-border-color);
-  color: var(--light-background-color);
+  background-color: var(--special-extra-bright);
+  border: 4px solid var(--special-extra-bright-border);
+  color: var(--basic-extra-light);
   background-clip: padding-box;
-  margin-left: -3px;
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
 }
 
 .button-dark:hover {
-  background-color: var(--light-background-color);
-  border: 4px solid var(--dark-background-color);
-  color: var(--primary-text-color);
+  background-color: var(--basic-extra-light);
+  border: 4px solid var(--special-extra-bright);
+  color: var(--basic-extra-dark);
 }
 
 .button-dark:active {
-  background-color: var(--primary-color);
-  border: 2px solid var(--primary-text-color);
-  color: var(--light-background-color);
+  background-color: var(--special-light);
+  border: 2px solid var(--basic-extra-dark);
+  color: var(--basic-extra-light);
 }
 
 .button-dark:focus {
-  background-color: var(--dark-background-color);
-  border: 2px solid var(--primary-text-color);
-  color: var(--light-background-color);
+  background-color: var(--special-extra-bright);
+  border: 2px solid var(--basic-extra-dark);
+  color: var(--basic-extra-light);
 }
 
 .button-dark:disabled {
-  background-color: var(--dark-disabled-background-color);
-  border: 4px solid var(--dark-disabled-border-color);
-  color: var(--secondary-text-color);
+  background-color: var(--basic-neutral-disabled);
+  border: 4px solid var(--basic-neutral);
+  color: var(--basic-dark);
   font-weight: 400;
 }
 
+.button-container {
+  min-height: 52px;
+  min-width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.news-subscribe-button-container {
+
+}
+
+.delivery-button-container {
+
+}
+
+.contacts-button-container {
+
+}
+
 .button-light {
-  background-color: var(--light-background-color);
+  background-color: var(--basic-extra-light);
   border: 4px solid rgba(252, 252, 252, 0.4);
-  color: var(--primary-text-color);
+  color: var(--basic-extra-dark);
   background-clip: padding-box;
-  margin-left: -3px;
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
 }
 
 .button-light:hover {
   background-color: rgba(252, 252, 252, 0.4);
-  border: 4px solid var(--light-background-color);
-  color: var(--primary-text-color);
+  border: 4px solid var(--basic-extra-light);
+  color: var(--basic-extra-dark);
 }
 
 .button-light:active {
-  background-color: var(--light-background-color);
-  border: 2px solid var(--primary-text-color);
-  color: var(--primary-text-color);
+  background-color: var(--basic-extra-light);
+  border: 2px solid var(--basic-extra-dark);
+  color: var(--basic-extra-dark);
 }
 
 .button-light:focus {
   background-color: rgba(252, 252, 252, 0.5);
-  border: 2px solid var(--primary-text-color);
-  color: var(--primary-text-color);
+  border: 2px solid var(--basic-extra-dark);
+  color: var(--basic-extra-dark);
+}
+
+/* формы */
+.form-input {
+  width: 100%;
+  max-height: 48px;
+  padding: 13px 15px;
+  line-height: 20px;
+  border-radius: 4px;
+  border: 1px solid var(--basic-neutral);
+}
+
+.form-label-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.form-label {
+  line-height: 20px;
+  margin-right: 4px;
 }
 
 /* слайдер с мороженым */
@@ -346,7 +388,7 @@ img {
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  color: var(--primary-text-color);
+  color: var(--basic-extra-dark);
   margin: 0 0 48px;
 }
 
@@ -376,7 +418,7 @@ img {
 .pagination-item-underlay {
   position: absolute;
   border-radius: 50% ;
-  background-color: var(--slider-underlay);
+  background-color: var(--special-extra-light);
   opacity: 0.5;
   width: 312px;
   height: 312px;
@@ -388,7 +430,7 @@ img {
 .pagination-item-underlay-small {
   position: absolute;
   border-radius: 50% ;
-  background-color: var(--slider-underlay);
+  background-color: var(--special-extra-light);
   opacity: 0.4;
   width: 100px;
   height: 100px;
@@ -409,7 +451,7 @@ img {
 
 .slider-button {
   background-color: rgba(252, 252, 252, 0.3);
-  border: 2px solid var(--light-background-color);
+  border: 2px solid var(--basic-extra-light);
   background-clip: padding-box;
   border-radius: 50%;
   padding: 11px;
@@ -417,19 +459,19 @@ img {
 }
 
 .slider-button svg {
-  fill: var(--light-background-color);
+  fill: var(--basic-extra-light);
 }
 
 .slider-button:hover {
-  background-color: var(--light-background-color);
-  border: 2px solid var(--light-background-color);
+  background-color: var(--basic-extra-light);
+  border: 2px solid var(--basic-extra-light);
   background-clip: border-box;
 }
 
 .slider-button:hover svg,
 .slider-button:active svg,
 .slider-button:focus svg {
-  fill: var(--primary-text-color);
+  fill: var(--basic-extra-dark);
 }
 
 .slider-button:active {
@@ -439,7 +481,7 @@ img {
 
 .slider-button:focus {
   background-color: rgba(252, 252, 252, 0.5);
-  border: 2px solid var(--primary-text-color);
+  border: 2px solid var(--basic-extra-dark);
 }
 
 .slider-button:disabled {
@@ -462,12 +504,12 @@ img {
 }
 
 .bullet-current {
-  background-color: var(--light-background-color);
+  background-color: var(--basic-extra-light);
 }
 
 .bullet:hover {
   background-color: rgba(252, 252, 252, 0.5);
-  border: 1px solid var(--light-background-color);
+  border: 1px solid var(--basic-extra-light);
 }
 
 .bullet:active {
@@ -478,7 +520,7 @@ img {
 
 .bullet:focus {
   background-color: rgba(252, 252, 252, 0.5);
-  border: 1px solid var(--primary-text-color);
+  border: 1px solid var(--basic-extra-dark);
 }
 
 .bullets-container {
@@ -493,7 +535,7 @@ img {
 }
 
 .banners-item {
-  background-color: var(--secondary-color);
+  background-color: var(--special-neutral);
   padding: 36px 206px 36px 36px;
   border-radius: 16px;
   background-repeat: no-repeat;
@@ -546,6 +588,7 @@ img {
   display: block;
   border-radius: 50%;
   margin-bottom: 16px;
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
 }
 
 .offers-card-list {
@@ -561,15 +604,15 @@ img {
 }
 
 .offers-card-button {
-  background-color: var(--dark-background-color);
-  border: 2px solid var(--dark-background-color);
+  background-color: var(--special-extra-bright);
+  border: 2px solid var(--special-extra-bright);
   background-clip: border-box;
   border-radius: 26px;
   padding: 8px;
 }
 
 .offers-card-button svg {
-  fill: var(--light-background-color);
+  fill: var(--basic-extra-light);
 }
 
 .offers-card-button:hover  {
@@ -579,22 +622,22 @@ img {
 
 .offers-card-button:hover svg,
 .offers-card-button:active svg {
-  fill: var(--primary-text-color);
+  fill: var(--basic-extra-dark);
 }
 
 .offers-card-button:active {
-  background-color: var(--primary-color);
+  background-color: var(--special-light);
   background-clip: padding-box;
 }
 
 .offers-card-button:focus {
-  background-color: var(--dark-background-color);
-  border: 2px solid var(--primary-text-color);
+  background-color: var(--special-extra-bright);
+  border: 2px solid var(--basic-extra-dark);
   background-clip: padding-box;
 }
 
 .offers-card-button:focus svg {
-  fill: var(--light-background-color);
+  fill: var(--basic-extra-light);
 }
 
 .offers-card-price {
@@ -614,7 +657,7 @@ img {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: var(--paper-color);
+  background-color: var(--basic-white);
   border-radius: 8px;
   z-index: -1;
 }
@@ -640,7 +683,7 @@ img {
 }
 
 .advantages-container {
-  background-color: var(--paper-color);
+  background-color: var(--basic-white);
   border-radius: 16px;
   padding: 56px 40px;
 }
@@ -665,7 +708,7 @@ img {
   position: absolute;
   width: 48px;
   height: 48px;
-  border: 2px solid var(--primary-text-color);
+  border: 2px solid var(--basic-extra-dark);
   border-radius: 50%;
   background-repeat: no-repeat;
   background-position: center;
@@ -722,13 +765,23 @@ img {
 }
 
 .news-subscribe-container {
-  background-color: var(--paper-color);
+  background-color: var(--basic-white);
   border-radius: 16px;
   padding: 26px;
 }
 
 .news-subscribe-description {
-  margin: 0;
+  margin: 0 0 42px;
+}
+
+.news-subscribe-form-container {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 14px;
+}
+
+.news-subscribe-form-container .form-input {
+  align-self: center;
 }
 
 /* доставка */
@@ -753,11 +806,13 @@ img {
 }
 
 .delivery-form-container {
-  background-color: var(--paper-color);
+  background-color: var(--basic-white);
   border-radius: 8px;
   max-width: 500px;
   min-width: 500px;
+  min-height: 132px;
   padding: 40px;
+  box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
 }
 
 .delivery-form {
@@ -765,24 +820,6 @@ img {
   grid-template-columns: minmax(min-content, 117px) 1fr;
   gap: 20px 16px;
   margin-bottom: 32px;
-}
-
-.delivery-form-input {
-  width: 100%;
-  padding: 14px 16px;
-  border-radius: 4px;
-  border: 1px solid var(--dark-disabled-border-color);
-}
-
-.delivery-form .form-label-container {
-  display: flex;
-  align-items: center;
-  margin-bottom: 8px;
-}
-
-.delivery-form .form-label {
-  line-height: 20px;
-  margin-right: 4px;
 }
 
 .delivery-submit {
@@ -810,9 +847,10 @@ img {
 }
 
 .contacts-container {
-  background-color: var(--paper-color);
+  background-color: var(--basic-extra-light);
   border-radius: 8px;
   padding: 40px;
+  box-shadow: 0px 8px 16px rgba(45, 52, 64, 0.12);
 }
 
 .contacts-main-office {
@@ -849,7 +887,7 @@ img {
 /* хлебные крошки */
 .breadcrumbs {
   display: flex;
-  color: var(--primary-text-color);
+  color: var(--basic-extra-dark);
   line-height: 20px;
   margin-top: 32px;
   margin-bottom: 16px;
@@ -890,6 +928,7 @@ img {
 .breadcrumbs-link {
   display: block;
 }
+
 
 /* фильтр-меню каталога */
 .catalog-filters {
@@ -943,15 +982,15 @@ img {
 
 .filters-icon {
   margin-right: 8px;
-  fill: var(--primary-text-color);
+  fill: var(--basic-extra-dark);
 }
 
 .filters-icon:hover {
-  fill: var(--light-background-color);
+  fill: var(--basic-extra-light);
 }
 
 .filters-icon:disabled {
-  fill: var(--dark-disabled-background-color);
+  fill: var(--basic-neutral-disabled);
 }
 
 .select-control,
@@ -982,7 +1021,7 @@ img {
 
 .select-control:focus {
   background-color: rgba(252, 252, 252, 0.5);
-  border: 2px solid var(--light-background-color);
+  border: 2px solid var(--basic-extra-light);
   background-clip: padding-box;
 }
 
@@ -1006,7 +1045,7 @@ img {
   left: 30px;
   height: 0;
   width: 68px;
-  border: 1px solid var(--secondary-text-color);
+  border: 1px solid var(--basic-dark);
 }
 
 .filters-range-toggle {
@@ -1015,25 +1054,25 @@ img {
   box-sizing: content-box;
   width: 4px;
   height: 4px;
-  background: var(--light-background-color);
-  border: 6px solid var(--primary-text-color);
+  background: var(--basic-extra-light);
+  border: 6px solid var(--basic-extra-dark);
   border-radius: 50%;
   cursor: pointer;
 }
 
 .filters-range-toggle:hover {
-  background: var(--primary-text-color);
-  border-color: var(--light-background-color);
+  background: var(--basic-extra-dark);
+  border-color: var(--basic-extra-light);
 }
 
 .filters-range-toggle:active {
-  background: var(--primary-text-color);
+  background: var(--basic-extra-dark);
 }
 
 .filters-range-toggle:focus {
-  background: var(--primary-text-color);
-  border-color: var(--light-background-color);
-  outline: 2px solid var(--primary-text-color);
+  background: var(--basic-extra-dark);
+  border-color: var(--basic-extra-light);
+  outline: 2px solid var(--basic-extra-dark);
 }
 
 .toggle-min {
@@ -1068,8 +1107,8 @@ img {
 
 .filter-button {
   background-color: rgba(252, 252, 252, 0.3);
-  border: 2px solid var(--light-background-color);
-  color: var(--primary-text-color);
+  border: 2px solid var(--basic-extra-light);
+  color: var(--basic-extra-dark);
   background-clip: padding-box;
   border-radius: 20px;
   font-size: 14px;
@@ -1079,20 +1118,20 @@ img {
 
 .filter-button:hover {
   background-color: rgba(252, 252, 252, 0.3);
-  border: 2px solid var(--light-background-color);
-  color: var(--primary-text-color);
+  border: 2px solid var(--basic-extra-light);
+  color: var(--basic-extra-dark);
 }
 
 .filter-button:active {
   background-color: rgba(252, 252, 252, 0.5);
-  border: var(--light-background-color);
-  color: var(--primary-text-color);
+  border: var(--basic-extra-light);
+  color: var(--basic-extra-dark);
 }
 
 .filter-button:focus {
   background-color: rgba(252, 252, 252, 0.3);
-  border: 2px solid var(--primary-text-color);
-  color: var(--primary-text-color);
+  border: 2px solid var(--basic-extra-dark);
+  color: var(--basic-extra-dark);
 }
 
 /* пагинация каталога */
@@ -1100,6 +1139,7 @@ img {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 40px 0;
+  min-height: 132px;
 }
 
 .offers-button-container {
@@ -1136,18 +1176,18 @@ img {
 }
 
 .pagination-prev svg {
-  fill: var(--primary-text-color);
+  fill: var(--basic-extra-dark);
   opacity: 0.3;
 }
 
 .pagination-next svg {
-  fill: var(--primary-text-color);
+  fill: var(--basic-extra-dark);
 }
 
 .pagination-link.pagination-current,
 .pagination-link.pagination-current:hover {
-  background-color: var(--light-background-color);
-  border: 1px solid var(--light-background-color);
+  background-color: var(--basic-extra-light);
+  border: 1px solid var(--basic-extra-light);
 }
 
 .pagination-link:hover {
@@ -1158,12 +1198,12 @@ img {
 
 .pagination-link:active {
   background-color: rgba(252, 252, 252, 0.5);
-  border: 1px solid var(--light-background-color);
+  border: 1px solid var(--basic-extra-light);
 }
 
 .pagination-link:focus {
   background-color: rgba(252, 252, 252, 0.5);
-  border: 1px solid var(--primary-text-color);
+  border: 1px solid var(--basic-extra-dark);
 }
 
 /* footer */
@@ -1214,7 +1254,7 @@ img {
 
 .social-link {
   display: block;
-  background-color: var(--primary-color);
+  background-color: var(--special-light);
   background-repeat: no-repeat;
   background-position: center;
   border: 2px solid rgba(252, 252, 252, 0.3);
@@ -1225,17 +1265,17 @@ img {
 }
 
 .social-link:hover {
-  background-color: var(--primary-text-color);
+  background-color: var(--basic-extra-dark);
 }
 
 .social-link:active {
-  background-color: var(--primary-text-color);
+  background-color: var(--basic-extra-dark);
   opacity: 0.5;
 }
 
 .social-link:focus {
-  background-color: var(--primary-text-color);
-  border: 2px solid var(--primary-text-color);
+  background-color: var(--basic-extra-dark);
+  border: 2px solid var(--basic-extra-dark);
   background-clip: padding-box;
 }
 
@@ -1254,7 +1294,7 @@ img {
 /* дополнительные классы */
 .no-underline {
   text-decoration: none;
-  color: var(--primary-text-color);
+  color: var(--basic-extra-dark);
 }
 
 .opacity {
@@ -1270,7 +1310,7 @@ img {
 }
 
 .text-color-secondary {
-  color: var(--secondary-text-color);
+  color: var(--basic-dark);
 }
 
 .text-align-center {
