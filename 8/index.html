@@ -363,10 +363,14 @@
             Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
           </p>
           <form action="#" method="post">
-            <input id="email" type="email" name="email" placeholder="email@example.com" required>
-            <button class="button-dark button" type="submit">
-              Отправить
-            </button>
+            <div class="news-subscribe-form-container">
+            <input class="form-input" id="email" type="email" name="email" placeholder="email@example.com" required>
+            <div class="button-container news-subscribe-button-container">
+              <button class="button-dark button" type="submit">
+                Отправить
+              </button>
+            </div>
+            </div>
           </form>
         </div>
       </article>
@@ -401,8 +405,7 @@
                         fill="#2D3440"/>
                 </svg>
               </div>
-
-              <input class="delivery-form-input" type="text" id="delivery-date" name="delivery-date"
+              <input class="form-input" type="text" id="delivery-date" name="delivery-date"
                      placeholder="01.04.2020" required>
             </div>
 
@@ -412,7 +415,7 @@
                   <b>Телефон</b>
                 </label>
               </div>
-              <input class="delivery-form-input" type="text" id="delivery-phone" name="delivery-phone"
+              <input class="form-input" type="text" id="delivery-phone" name="delivery-phone"
                      placeholder="+7 800 999-00-00" required>
             </div>
 
@@ -428,21 +431,21 @@
                         fill="#2D3440"/>
                 </svg>
               </div>
-              <input class="delivery-form-input" type="text" id="delivery-address" name="delivery-address"
+              <input class="form-input" type="text" id="delivery-address" name="delivery-address"
                      placeholder="ул. Большая Конюшенная, 19/8" required>
             </div>
           </div>
-
+          <div class="button-container delivery-button-container">
           <button class="delivery-submit button-dark button" type="submit">
             Отправить
           </button>
+          </div>
         </form>
       </div>
     </section>
 
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
-
       <div class="contacts-container">
         <span class="contacts-main-office text-color-secondary">
           Адрес главного офиса<br> и офлайн-магазина:
@@ -461,7 +464,10 @@
         <span class="contacts-hours text-smaller text-color-secondary">
           (с 10 до 20 ежедневно)
         </span>
-        <button class="button-dark button" type="button">Форма обратной связи</button>
+        <div class="button-container contacts-button-container">
+        <button class="button-dark button" type="button">Форма обратной связи
+        </button>
+        </div>
       </div>
     </section>
   </main>
