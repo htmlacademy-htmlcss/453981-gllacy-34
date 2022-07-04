@@ -1508,12 +1508,13 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .copyright {
-  padding-right: 20px;
+  padding-right: 14px;
 }
 
 .copyright-info {
   max-width: 200px;
   margin: 8px 0 0;
+  padding-top: 10px;
   font-size: 12px;
   line-height: 16px;
 }
