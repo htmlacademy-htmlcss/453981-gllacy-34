@@ -4,53 +4,60 @@
   <meta charset="UTF-8">
   <title>HTML Academy: Глейси. Каталог</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
 </head>
 
 <body>
 <div class="container">
   <header class="page-header catalog-page-header">
-    <a class="navigation-logo no-underline" href="index.html" tabindex="1">
-      <img class="logo" src="images/logo-gllacy.svg" width="137" height="56"
+    <h1 class="visually-hidden">Магазин мороженого Глейси. Каталог.</h1>
+    <a class="navigation-logo no-underline" href="index.html" tabindex="0">
+      <img src="images/logo-gllacy.svg" width="137" height="56"
            alt="Логотип магазина мороженого «Глейси»."></a>
 
     <nav class="navigation">
       <ul class="navigation-list navigation-chapters reset-list">
         <li class="navigation-item popover-container">
-          <a class="navigation-link navigation-current no-underline" href="catalog.html" tabindex="1">Каталог</a>
+          <h2 class="visually-hidden">Каталог мороженого.</h2>
+          <a class="navigation-link navigation-current no-underline" href="catalog.html" tabindex="0">Каталог</a>
           <div class="popover popover-catalog visually-hidden">
-            <h4 class="popover-title">Новинки</h4>
+            <h3 class="popover-title">Новинки</h3>
             <div class="divider-container">
               <div class="divider"></div>
             </div>
             <ul class="reset-list">
               <li class="text-smaller">
-                <a class="page no-underline" href="#" tabindex="1">Сливочное</a></li>
+                <a class="page page-current no-underline" href="#" tabindex="0">Сливочное</a></li>
               <li class="text-smaller">
-                <a class="page no-underline" href="#" tabindex="1">Щербеты</a></li>
+                <a class="page no-underline" href="#" tabindex="0">Щербеты</a></li>
               <li class="text-smaller">
-                <a class="page no-underline" href="#" tabindex="1">Фруктовый лед</a></li>
+                <a class="page no-underline" href="#" tabindex="0">Фруктовый лед</a></li>
               <li class="text-smaller">
-                <a class="page no-underline" href="#" tabindex="1">Мелорин</a></li>
+                <a class="page no-underline" href="#" tabindex="0">Мелорин</a></li>
             </ul>
           </div>
         </li>
 
         <li class="navigation-item">
-          <a class="navigation-link no-underline" href="#" tabindex="1">Доставка и оплата</a>
+          <a class="navigation-link no-underline" href="#" tabindex="0">Доставка и оплата</a>
         </li>
 
         <li class="navigation-item">
-          <a class="navigation-link no-underline" href="#" tabindex="1">О компании</a>
+          <a class="navigation-link no-underline" href="#" tabindex="0">О компании</a>
         </li>
       </ul>
 
       <ul class="navigation-list navigation-user reset-list">
         <li class="navigation-item">
-          <a class="no-underline" href="tel:+78005558628" tabindex="1"><b>+7 800 555-86-28</b></a>
+          <a class="no-underline navigation-phone-link" href="tel:+78005558628" tabindex="0">
+            <b class="navigation-phone">+7 800 555-86-28</b>
+          </a>
         </li>
 
         <li class="navigation-item popover-container">
-          <a class="navigation-link link-button link-icon-button no-underline" href="#" tabindex="1">
+          <a class="navigation-link link-button link-icon-button no-underline" href="#" tabindex="0">
             <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16"
                  fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -63,6 +70,7 @@
             <h3 class="visually-hidden heading-h3">Поиск по сайту.</h3>
             <form action="https://echo.htmlacademy.ru/" method="post">
               <fieldset class="input-reset-container">
+                <legend class="visually-hidden">Поиск по сайту.</legend>
                 <label class="visually-hidden" for="search">Поиск по сайту.</label>
                 <input class="form-input text-input" id="search" type="search" name="search"
                        placeholder="Поиск по сайту">
@@ -72,6 +80,7 @@
                     <path fill-rule="evenodd" clip-rule="evenodd"
                           d="M12.803 4.13807C13.0634 3.87772 13.0634 3.45561 12.803 3.19526C12.5427 2.93491 12.1206 2.93491 11.8602 3.19526L7.99914 7.05633L4.13807 3.19526C3.87772 2.93491 3.45561 2.93491 3.19526 3.19526C2.93491 3.45561 2.93491 3.87772 3.19526 4.13807L7.05633 7.99914L3.19526 11.8602C2.93491 12.1206 2.93491 12.5427 3.19526 12.803C3.45561 13.0634 3.87772 13.0634 4.13807 12.803L7.99914 8.94195L11.8602 12.803C12.1206 13.0634 12.5427 13.0634 12.803 12.803C13.0634 12.5427 13.0634 12.1206 12.803 11.8602L8.94195 7.99914L12.803 4.13807Z"/>
                   </svg>
+                  <span class="visually-hidden">Поиск по сайту.</span>
                 </button>
               </fieldset>
             </form>
@@ -79,7 +88,7 @@
         </li>
 
         <li class="navigation-item popover-container">
-          <a class="navigation-link link-button no-underline" href="#" tabindex="1">
+          <a class="navigation-link link-button no-underline" href="#" tabindex="0">
             <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16"
                  fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -92,6 +101,7 @@
             <h3 class="modal-title heading-h3">Личный кабинет</h3>
             <form action="https://echo.htmlacademy.ru/" method="post">
               <fieldset class="modal-form">
+                <legend class="visually-hidden">e-mail.</legend>
                 <label class="visually-hidden" for="auth">e-mail.</label>
                 <input class="form-input text-input" id="auth" type="email" name="auth" placeholder="email@example.com"
                        required>
@@ -104,8 +114,8 @@
                   Войти
                 </button>
                 <div class="popup-links">
-                  <a class="popup-link text-smaller" href="#" tabindex="1">Забыли пароль?</a>
-                  <a class="popup-link text-smaller" href="#" tabindex="1">Регистрация</a>
+                  <a class="popup-link text-smaller" href="#" tabindex="0">Забыли пароль?</a>
+                  <a class="popup-link text-smaller" href="#" tabindex="0">Регистрация</a>
                 </div>
               </div>
             </form>
@@ -113,7 +123,7 @@
         </li>
 
         <li class="navigation-item popover-container">
-          <a class="navigation-link link-button no-underline" href="#" tabindex="1">
+          <a class="navigation-link link-button no-underline" href="#" tabindex="0">
             <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16"
                  fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -183,18 +193,18 @@
 
       <ol class="breadcrumbs reset-list">
         <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link no-underline" href="index.html" tabindex="1">
+          <a class="breadcrumbs-link no-underline" href="index.html" tabindex="0">
             <b class="text-smaller">Главная</b>
           </a>
         </li>
 
         <li class="breadcrumbs-item breadcrumbs-item-current">
-          <a class="breadcrumbs-link no-underline" href="#" tabindex="1">
+          <a class="breadcrumbs-link no-underline" href="#" tabindex="0">
             <b class="text-smaller">Каталог</b>
           </a>
         </li>
       </ol>
-      <h1 class="catalog-page-title heading-h2">Сливочное мороженое</h1>
+      <h2 class="catalog-page-title heading-h2">Сливочное мороженое</h2>
     </header>
 
     <section class="catalog-filters">
@@ -217,10 +227,10 @@
             <div class="filters-range">
               <div class="filters-range-scale">
                 <div class="filters-range-bar">
-                  <span class="filters-range-toggle toggle-min" tabindex="1">
+                  <span class="filters-range-toggle toggle-min" tabindex="0">
                   <span class="visually-hidden">Изменить минимальную цену.</span>
                 </span>
-                  <span class="filters-range-toggle toggle-max" tabindex="1">
+                  <span class="filters-range-toggle toggle-max" tabindex="0">
                   <span class="visually-hidden">Изменить максимальную цену.</span>
                 </span>
                 </div>
@@ -403,7 +413,7 @@
 
       <ul class="offers-card-list reset-list">
         <li class="offers-card-item">
-          <a class="no-underline offers-card-link" href="#" tabindex="1">
+          <a class="no-underline offers-card-link" href="#" tabindex="0">
             <img class="offers-card-image" src="images/raspberry.jpg" width="168" height="168"
                  alt="Мороженое с малиновым джемом.">
             <h3 class="heading-h4">Малинка</h3>
@@ -413,7 +423,7 @@
           </a>
           <div class="offers-card-order">
             <b class="offers-card-price">310 &#8381;/кг</b>
-            <a class="offers-card-button button no-underline link-button link-icon-button" href="#" tabindex="1">
+            <a class="offers-card-button button no-underline link-button link-icon-button" href="#" tabindex="0">
               <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16"
                    viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -426,7 +436,7 @@
         </li>
 
         <li class="offers-card-item">
-          <a class="no-underline offers-card-link" href="#" tabindex="1">
+          <a class="no-underline offers-card-link" href="#" tabindex="0">
             <img class="offers-card-image" src="images/pistachio.jpg" width="168" height="168"
                  alt="Фисташковое мороженое с шоколадом.">
             <h3 class="heading-h4">Фисташка</h3>
@@ -436,7 +446,7 @@
           </a>
           <div class="offers-card-order">
             <b class="offers-card-price">340 &#8381;/кг</b>
-            <a class="offers-card-button button no-underline link-button link-icon-button" href="#" tabindex="1">
+            <a class="offers-card-button button no-underline link-button link-icon-button" href="#" tabindex="0">
               <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16"
                    viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -449,7 +459,7 @@
         </li>
 
         <li class="offers-card-item">
-          <a class="no-underline offers-card-link" href="#" tabindex="1">
+          <a class="no-underline offers-card-link" href="#" tabindex="0">
             <img class="offers-card-image" src="images/blueberry.jpg" width="168" height="168"
                  alt="Мороженое крем-брюле с черничным джемом.">
             <h3 class="heading-h4">Черника</h3>
@@ -459,7 +469,7 @@
           </a>
           <div class="offers-card-order">
             <b class="offers-card-price">330 &#8381;/кг</b>
-            <a class="offers-card-button button no-underline link-button link-icon-button" href="#" tabindex="1">
+            <a class="offers-card-button button no-underline link-button link-icon-button" href="#" tabindex="0">
               <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16"
                    viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -472,7 +482,7 @@
         </li>
 
         <li class="offers-card-item">
-          <a class="no-underline offers-card-link" href="#" tabindex="1">
+          <a class="no-underline offers-card-link" href="#" tabindex="0">
             <img class="offers-card-image" src="images/bubble-gum.jpg" width="168" height="168"
                  alt="Ванильное мороженое с посыпкой.">
             <h3 class="heading-h4">Бабл-гам</h3>
@@ -482,7 +492,7 @@
           </a>
           <div class="offers-card-order">
             <b class="offers-card-price">320 &#8381;/кг</b>
-            <a class="offers-card-button button no-underline link-button link-icon-button" href="#" tabindex="1">
+            <a class="offers-card-button button no-underline link-button link-icon-button" href="#" tabindex="0">
               <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16"
                    viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -495,7 +505,7 @@
         </li>
 
         <li class="offers-card-item">
-          <a class="no-underline offers-card-link" href="#" tabindex="1">
+          <a class="no-underline offers-card-link" href="#" tabindex="0">
             <img class="offers-card-image" src="images/blackberry.jpg" width="168" height="168"
                  alt="Мороженое с ежевичным джемом.">
             <h3 class="heading-h4">Ежевика</h3>
@@ -505,7 +515,7 @@
           </a>
           <div class="offers-card-order">
             <b class="offers-card-price">330 &#8381;/кг</b>
-            <a class="offers-card-button button no-underline link-button link-icon-button" href="#" tabindex="1">
+            <a class="offers-card-button button no-underline link-button link-icon-button" href="#" tabindex="0">
               <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16"
                    viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -518,7 +528,7 @@
         </li>
 
         <li class="offers-card-item">
-          <a class="no-underline offers-card-link" href="#" tabindex="1">
+          <a class="no-underline offers-card-link" href="#" tabindex="0">
             <img class="offers-card-image" src="images/banana.jpg" width="168" height="168" alt="Банановое мороженое.">
             <h3 class="heading-h4">Банан</h3>
             <p class="offers-card-description text-color-secondary text-align-center">
@@ -527,7 +537,7 @@
           </a>
           <div class="offers-card-order">
             <b class="offers-card-price">340 &#8381;/кг</b>
-            <a class="offers-card-button button no-underline link-button link-icon-button" href="#" tabindex="1">
+            <a class="offers-card-button button no-underline link-button link-icon-button" href="#" tabindex="0">
               <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16"
                    viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -540,7 +550,7 @@
         </li>
 
         <li class="offers-card-item">
-          <a class="no-underline offers-card-link" href="#" tabindex="1">
+          <a class="no-underline offers-card-link" href="#" tabindex="0">
             <img class="offers-card-image" src="images/chocolate.jpg" width="168" height="168"
                  alt="Шоколадное мороженое.">
             <h3 class="heading-h4">Шоколадка</h3>
@@ -550,7 +560,7 @@
           </a>
           <div class="offers-card-order">
             <b class="offers-card-price">270 &#8381;/кг</b>
-            <a class="offers-card-button button no-underline link-button link-icon-button" href="#" tabindex="1">
+            <a class="offers-card-button button no-underline link-button link-icon-button" href="#" tabindex="0">
               <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16"
                    viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -563,7 +573,7 @@
         </li>
 
         <li class="offers-card-item">
-          <a class="no-underline offers-card-link" href="#" tabindex="1">
+          <a class="no-underline offers-card-link" href="#" tabindex="0">
             <img class="offers-card-image" src="images/strawberry.jpg" width="168" height="168"
                  alt="Клубничное мороженое.">
             <h3 class="heading-h4">Клубничка</h3>
@@ -573,7 +583,7 @@
           </a>
           <div class="offers-card-order">
             <b class="offers-card-price">300 &#8381;/кг</b>
-            <a class="offers-card-button button no-underline link-button link-icon-button" href="#" tabindex="1">
+            <a class="offers-card-button button no-underline link-button link-icon-button" href="#" tabindex="0">
               <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16"
                    viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -586,7 +596,7 @@
         </li>
 
         <li class="offers-card-item">
-          <a class="no-underline offers-card-link" href="#" tabindex="1">
+          <a class="no-underline offers-card-link" href="#" tabindex="0">
             <img class="offers-card-image" src="images/lemon.jpg" width="168" height="168" alt="Лимонное мороженое.">
             <h3 class="heading-h4">Лимон</h3>
             <p class="offers-card-description text-color-secondary text-align-center">
@@ -595,7 +605,7 @@
           </a>
           <div class="offers-card-order">
             <b class="offers-card-price">310 &#8381;/кг</b>
-            <a class="offers-card-button button no-underline link-button link-icon-button" href="#" tabindex="1">
+            <a class="offers-card-button button no-underline link-button link-icon-button" href="#" tabindex="0">
               <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16"
                    viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -608,7 +618,7 @@
         </li>
 
         <li class="offers-card-item">
-          <a class="no-underline offers-card-link" href="#" tabindex="1">
+          <a class="no-underline offers-card-link" href="#" tabindex="0">
             <img class="offers-card-image" src="images/menthol.jpg" width="168" height="168"
                  alt="Ментоловое мороженое.">
             <h3 class="heading-h4">Ментол</h3>
@@ -618,7 +628,7 @@
           </a>
           <div class="offers-card-order">
             <b class="offers-card-price">320 &#8381;/кг</b>
-            <a class="offers-card-button button no-underline link-button link-icon-button" href="#" tabindex="1">
+            <a class="offers-card-button button no-underline link-button link-icon-button" href="#" tabindex="0">
               <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16"
                    viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -631,7 +641,7 @@
         </li>
 
         <li class="offers-card-item">
-          <a class="no-underline offers-card-link" href="#" tabindex="1">
+          <a class="no-underline offers-card-link" href="#" tabindex="0">
             <img class="offers-card-image" src="images/nut.jpg" width="168" height="168"
                  alt="Фисташковое мороженое с сиропом.">
             <h3 class="heading-h4">Орешек</h3>
@@ -641,7 +651,7 @@
           </a>
           <div class="offers-card-order">
             <b class="offers-card-price">360 &#8381;/кг</b>
-            <a class="offers-card-button button no-underline link-button link-icon-button" href="#" tabindex="1">
+            <a class="offers-card-button button no-underline link-button link-icon-button" href="#" tabindex="0">
               <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16"
                    viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -654,7 +664,7 @@
         </li>
 
         <li class="offers-card-item">
-          <a class="no-underline offers-card-link" href="#" tabindex="1">
+          <a class="no-underline offers-card-link" href="#" tabindex="0">
             <img class="offers-card-image" src="images/creme-brulee.jpg" width="168" height="168"
                  alt="Мороженое крем-брюле.">
             <h3 class="heading-h4">Крем-брюле</h3>
@@ -664,7 +674,7 @@
           </a>
           <div class="offers-card-order">
             <b class="offers-card-price">280 &#8381;/кг</b>
-            <a class="offers-card-button button no-underline link-button link-icon-button" href="#" tabindex="1">
+            <a class="offers-card-button button no-underline link-button link-icon-button" href="#" tabindex="0">
               <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16"
                    viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -683,7 +693,7 @@
         </div>
 
         <div class="catalog-pagination-container">
-          <a class="pagination-link pagination-prev" href="#" tabindex="1">
+          <a class="pagination-link pagination-prev" href="#" tabindex="0">
             <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -694,27 +704,27 @@
 
           <ol class="catalog-pagination reset-list">
             <li class="pagination-item">
-              <a class="pagination-link no-underline" href="#" tabindex="1">1</a>
+              <a class="pagination-link no-underline" href="#" tabindex="0">1</a>
             </li>
 
             <li class="pagination-item">
-              <a class="pagination-link no-underline" href="#" tabindex="1">2</a>
+              <a class="pagination-link no-underline" href="#" tabindex="0">2</a>
             </li>
 
             <li class="pagination-item">
-              <a class="pagination-link no-underline pagination-current" href="#" tabindex="1">3</a>
+              <a class="pagination-link no-underline pagination-current" href="#" tabindex="0">3</a>
             </li>
 
             <li class="pagination-item">
-              <a class="pagination-link no-underline" href="#" tabindex="1">4</a>
+              <a class="pagination-link no-underline" href="#" tabindex="0">4</a>
             </li>
 
             <li class="pagination-item">
-              <a class="pagination-link no-underline" href="#" tabindex="1">5</a>
+              <a class="pagination-link no-underline" href="#" tabindex="0">5</a>
             </li>
           </ol>
 
-          <a class="pagination-link pagination-next" href="#" tabindex="1">
+          <a class="pagination-link pagination-next" href="#" tabindex="0">
             <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -729,11 +739,11 @@
 
   <footer class="page-footer catalog-page-footer">
     <section class="social-media">
-      <h2 class="visually-hidden">Социальные сети.</h2>
+      <h3 class="visually-hidden">Социальные сети.</h3>
 
       <ul class="social reset-list">
         <li class="social-item">
-          <a class="social-link no-underline" href="https://t.me/htmlacademy" tabindex="1">
+          <a class="social-link no-underline" href="https://t.me/htmlacademy" tabindex="0">
             <svg aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -744,7 +754,7 @@
         </li>
 
         <li class="social-item">
-          <a class="social-link no-underline" href="https://vk.com/htmlacademy" tabindex="1">
+          <a class="social-link no-underline" href="https://vk.com/htmlacademy" tabindex="0">
             <svg aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -755,7 +765,7 @@
         </li>
 
         <li class="social-item">
-          <a class="social-link no-underline" href="https://www.youtube.com/user/htmlacademyru" tabindex="1">
+          <a class="social-link no-underline" href="https://www.youtube.com/user/htmlacademyru" tabindex="0">
             <svg aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
               <path
@@ -768,29 +778,29 @@
     </section>
 
     <section class="footer-menu">
-      <h2 class="visually-hidden">Меню.</h2>
+      <h3 class="visually-hidden">Меню.</h3>
 
       <ul class="footer-links reset-list">
         <li class="footer-links-item favorite-item">
-          <a class="footer-link text-smaller no-underline" href="#" tabindex="1">
+          <a class="footer-link text-smaller no-underline" href="#" tabindex="0">
             <b>Для поставщиков</b>
           </a>
         </li>
 
         <li class="footer-links-item">
-          <a class="footer-link text-smaller no-underline" href="#" tabindex="1">
+          <a class="footer-link text-smaller no-underline" href="#" tabindex="0">
             Наши документы
           </a>
         </li>
 
         <li class="footer-links-item">
-          <a class="footer-link text-smaller no-underline" href="#" tabindex="1">
+          <a class="footer-link text-smaller no-underline" href="#" tabindex="0">
             О производстве
           </a>
         </li>
 
         <li class="footer-links-item">
-          <a class="footer-link text-smaller no-underline" href="#" tabindex="1">
+          <a class="footer-link text-smaller no-underline" href="#" tabindex="0">
             Экологические стандарты
           </a>
         </li>
@@ -798,12 +808,12 @@
     </section>
 
     <section class="copyright">
-      <h2 class="visually-hidden">Копирайт.</h2>
+      <h3 class="visually-hidden">Копирайт.</h3>
 
-      <a class="htmlacademy-link no-underline" href="https://htmlacademy.ru/" tabindex="1">
+      <a class="htmlacademy-link no-underline" href="https://htmlacademy.ru/" tabindex="0">
         <img src="images/logo-htmlacademy.svg" width="93" height="27" alt="Логотип HTML-Academy.">
       </a>
-      <p class="copyright-info">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/" tabindex="1">.html
+      <p class="copyright-info">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/" tabindex="0">.html
         academy</a>
         &copy; 2021
       </p>

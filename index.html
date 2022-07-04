@@ -4,20 +4,25 @@
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
 </head>
 <body>
 <div class="container">
   <header class="page-header">
-    <a class="navigation-logo no-underline" href="#">
-      <img class="logo" src="images/logo-gllacy.svg" width="137" height="56"
+    <h1 class="visually-hidden">Магазин мороженого Глейси.</h1>
+    <a class="navigation-logo no-underline" href="#" tabindex="0">
+      <img src="images/logo-gllacy.svg" width="137" height="56"
            alt="Логотип магазина мороженого «Глейси»."></a>
 
     <nav class="navigation">
       <ul class="navigation-list navigation-chapters reset-list">
         <li class="navigation-item popover-container">
+          <h2 class="visually-hidden">Каталог мороженого.</h2>
           <a class="navigation-link no-underline" href="catalog.html" tabindex="0">Каталог</a>
           <div class="popover popover-catalog visually-hidden">
-            <h4 class="popover-title">Новинки</h4>
+            <h3 class="popover-title">Новинки</h3>
             <div class="divider-container">
               <div class="divider"></div>
             </div>
@@ -45,7 +50,9 @@
 
       <ul class="navigation-list navigation-user reset-list">
         <li class="navigation-item">
-          <a class="no-underline" href="tel:+78005558628" tabindex="0"><b>+7 800 555-86-28</b></a>
+          <a class="no-underline navigation-phone-link" href="tel:+78005558628" tabindex="0">
+            <b class="navigation-phone">+7 800 555-86-28</b>
+          </a>
         </li>
 
         <li class="navigation-item popover-container">
@@ -62,6 +69,7 @@
             <h3 class="visually-hidden heading-h3">Поиск по сайту.</h3>
             <form action="https://echo.htmlacademy.ru/" method="post">
               <fieldset class="input-reset-container">
+                <legend class="visually-hidden">Поиск по сайту.</legend>
                 <label class="visually-hidden" for="search">Поиск по сайту.</label>
                 <input class="form-input text-input" id="search" type="search" name="search"
                        placeholder="Поиск по сайту">
@@ -71,6 +79,7 @@
                     <path fill-rule="evenodd" clip-rule="evenodd"
                           d="M12.803 4.13807C13.0634 3.87772 13.0634 3.45561 12.803 3.19526C12.5427 2.93491 12.1206 2.93491 11.8602 3.19526L7.99914 7.05633L4.13807 3.19526C3.87772 2.93491 3.45561 2.93491 3.19526 3.19526C2.93491 3.45561 2.93491 3.87772 3.19526 4.13807L7.05633 7.99914L3.19526 11.8602C2.93491 12.1206 2.93491 12.5427 3.19526 12.803C3.45561 13.0634 3.87772 13.0634 4.13807 12.803L7.99914 8.94195L11.8602 12.803C12.1206 13.0634 12.5427 13.0634 12.803 12.803C13.0634 12.5427 13.0634 12.1206 12.803 11.8602L8.94195 7.99914L12.803 4.13807Z"/>
                   </svg>
+                  <span class="visually-hidden">Поиск по сайту.</span>
                 </button>
               </fieldset>
             </form>
@@ -91,6 +100,7 @@
             <h3 class="modal-title heading-h3">Личный кабинет</h3>
             <form action="https://echo.htmlacademy.ru/" method="post">
               <fieldset class="modal-form">
+                <legend class="visually-hidden">e-mail.</legend>
                 <label class="visually-hidden" for="auth">e-mail.</label>
                 <input class="form-input text-input" id="auth" type="email" name="auth" placeholder="email@example.com"
                        required>
@@ -181,7 +191,6 @@
   </header>
 
   <main class="main-index">
-    <h1 class="visually-hidden">Магазин мороженого Глейси.</h1>
     <section class="products">
       <div class="products-container">
         <h2 class="heading-h1 products-title">
@@ -631,7 +640,7 @@
 
   <footer class="page-footer">
     <section class="social-media">
-      <h2 class="visually-hidden">Социальные сети.</h2>
+      <h3 class="visually-hidden">Социальные сети.</h3>
 
       <ul class="social reset-list">
         <li class="social-item">
@@ -670,7 +679,7 @@
     </section>
 
     <section class="footer-menu">
-      <h2 class="visually-hidden">Меню.</h2>
+      <h3 class="visually-hidden">Меню.</h3>
 
       <ul class="footer-links reset-list">
         <li class="footer-links-item favorite-item">
@@ -700,7 +709,7 @@
     </section>
 
     <section class="copyright">
-      <h2 class="visually-hidden">Копирайт.</h2>
+      <h3 class="visually-hidden">Копирайт.</h3>
 
       <a class="htmlacademy-link no-underline" href="https://htmlacademy.ru/" tabindex="0">
         <img src="images/logo-htmlacademy.svg" width="93" height="27" alt="Логотип HTML-Academy.">
@@ -723,6 +732,7 @@
       <h3 class="modal-title heading-h3">Мы обязательно ответим вам!</h3>
       <form action="https://echo.htmlacademy.ru/" method="post">
         <fieldset class="modal-form">
+          <legend class="visually-hidden">Имя и фамилия.</legend>
           <label class="visually-hidden" for="name">Имя и фамилия.</label>
           <input class="form-input text-input" type="text" id="name" name="name" placeholder="Имя и фамилия" required>
 
