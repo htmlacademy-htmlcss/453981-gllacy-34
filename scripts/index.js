@@ -42,8 +42,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  feedbackButton.addEventListener('click', openModal)
-  popoverContainers.forEach((container) => {
+  feedbackButton?.addEventListener('click', openModal)
+  popoverContainers?.forEach((container) => {
     container.addEventListener('click', openPopover)
   })
 })
