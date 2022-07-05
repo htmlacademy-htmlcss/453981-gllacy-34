@@ -42,7 +42,7 @@
   --basic-extra-dark: #2d3440;
   --basic-dark: #565c66;
   --basic-light: #e7e7e7;
-  --basic-neutral: #b9b9b9;
+  --basic-neutral: #e0dede;
   --basic-neutral-disabled: #b9b9b94b;
   --basic-extra-light: #fcfcfc;
   --basic-white: #ffffff;
@@ -53,6 +53,9 @@
   --special-light: #feafc3;
   --special-extra-light: #ffcbd8;
   --error-color: #ea5454;
+  --background-advantages: #f6e1afff;
+  --background-delivery: #ecf3Ecff;
+  --background-contacts: #efe9efff;
 }
 
 html {
@@ -924,6 +927,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .advantages {
   margin-bottom: 80px;
   padding: 24px;
+  background-color: var(--background-advantages);
   background-image: url("../images/background-ceo.jpg");
   background-position: 100%;
   background-repeat: no-repeat;
@@ -1038,6 +1042,7 @@ input[type="search"]::-webkit-search-results-decoration {
   display: flex;
   margin-bottom: 80px;
   padding: 64px 64px 64px 100px;
+  background-color: var(--background-delivery);
   background-image: url("../images/background-delivery.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -1088,6 +1093,7 @@ input[type="search"]::-webkit-search-results-decoration {
 /* контакты */
 .contacts {
   padding: 64px 763px 67px 64px;
+  background-color: var(--background-contacts);
   background-image: url("../images/background-contacts.jpg");
   background-position: right;
   background-repeat: no-repeat;
